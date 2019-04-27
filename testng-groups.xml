@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CareerITTestSuite" parallel="methods" thread-count="5">
+	<listeners>
+		<listener class-name="com.careerit.selenium.testngpack.Selenium_TestNGListner"></listener>
+	</listeners>
+  <test name="SeleniumTest">
+  	<groups>
+  		<run>
+  			<include name="RegressionTest"></include>
+  		</run>
+  	</groups>
+	<packages>
+	  		<package name="com.careerit.selenium.testngpack.*">
+	  		</package>
+  	</packages>
+  </test> <!-- SeleniumTest -->
+</suite> <!-- CareerITTestSuite -->

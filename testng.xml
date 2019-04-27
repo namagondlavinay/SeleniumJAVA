@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CareerITTestSuite">
+  <test name="SeleniumTest">
+    <classes>
+      <class name="com.careerit.selenium.testngpack.Selenium_TestNG_TestPriority">
+      	<methods>
+      		<include name="testCase_01"></include>
+      		<include name="testCase_04"></include>
+      		<include name="testCase_05"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- SeleniumTest -->
+</suite> <!-- CareerITTestSuite -->

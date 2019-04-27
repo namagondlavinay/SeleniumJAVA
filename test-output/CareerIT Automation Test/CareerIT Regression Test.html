@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>TestNG:  CareerIT Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CareerIT Regression Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 11 07:30:12 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36305 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>RegressionTest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_03()'><b>wikiPedia_TestCase_03</b><br>Test class: com.careerit.selenium.testngpack.Selenium_TestNG_Groups1<br/>
+<a href="#Output-1688829361" onClick='toggleBox("Output-1688829361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1688829361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1688829361">
+11-Feb-2019 07:30:12 AM : Launching Chrome browser with - https://www.wikipedia.org/<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;pure-button pure-button-primary-progressive-ajay&apos;]&quot;}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;AJAY-PC&apos;, ip: &apos;192.168.31.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\ajay\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50832}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.96, webStorageEnabled: true}
+Session ID: 182f232d647182b202071c0172fc928f
+*** Element info: {Using=xpath, value=//button[@class=&apos;pure-button pure-button-primary-progressive-ajay&apos;]}
+	at com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_03(Selenium_TestNG_Groups1.java:127)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1688829361", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1688829361'><pre>java.lang.Exception: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;pure-button pure-button-primary-progressive-ajay&apos;]&quot;}
+  (Session info: chrome=72.0.3626.96)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;AJAY-PC&apos;, ip: &apos;192.168.31.180&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\ajay\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50832}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.96, webStorageEnabled: true}
+Session ID: 182f232d647182b202071c0172fc928f
+*** Element info: {Using=xpath, value=//button[@class=&apos;pure-button pure-button-primary-progressive-ajay&apos;]}
+	at com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_03(Selenium_TestNG_Groups1.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>17</td>
+<td>com.careerit.selenium.testngpack.Selenium_TestNG_Groups1@68f7aae2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_01()'><b>wikiPedia_TestCase_01</b><br>Test class: com.careerit.selenium.testngpack.Selenium_TestNG_Groups1<br/>
+<a href="#Output-45137938" onClick='toggleBox("Output-45137938", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45137938" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45137938">
+11-Feb-2019 07:30:12 AM : Launching Chrome browser with - https://www.wikipedia.org/<br/>
+11-Feb-2019 07:30:24 AM : Enter India into Search Text Box<br/>
+11-Feb-2019 07:30:25 AM : Selecting English from Language dropdown<br/>
+11-Feb-2019 07:30:25 AM : Clicking on Search icon<br/>
+11-Feb-2019 07:30:44 AM : Reading header text from the content page - India<br/>
+11-Feb-2019 07:30:46 AM : Closing the browser<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.careerit.selenium.testngpack.Selenium_TestNG_Groups1@68f7aae2</td></tr>
+<tr>
+<td title='com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_02()'><b>wikiPedia_TestCase_02</b><br>Test class: com.careerit.selenium.testngpack.Selenium_TestNG_Groups1<br/>
+<a href="#Output-1934507366" onClick='toggleBox("Output-1934507366", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1934507366" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1934507366">
+11-Feb-2019 07:30:12 AM : Launching Chrome browser with - https://www.wikipedia.org/<br/>
+11-Feb-2019 07:30:22 AM : Enter USA into Search Text Box<br/>
+11-Feb-2019 07:30:22 AM : Selecting English from Language dropdown<br/>
+11-Feb-2019 07:30:22 AM : Clicking on Search icon<br/>
+11-Feb-2019 07:30:46 AM : Reading header text from the content page - United States<br/>
+11-Feb-2019 07:30:48 AM : Closing the browser<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.careerit.selenium.testngpack.Selenium_TestNG_Groups1@68f7aae2</td></tr>
+<tr>
+<td title='com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_04()'><b>wikiPedia_TestCase_04</b><br>Test class: com.careerit.selenium.testngpack.Selenium_TestNG_Groups1<br/>
+<a href="#Output-892875783" onClick='toggleBox("Output-892875783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-892875783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892875783">
+11-Feb-2019 07:30:12 AM : Launching Chrome browser with - https://www.wikipedia.org/<br/>
+11-Feb-2019 07:30:22 AM : Enter Automation into Search Text Box<br/>
+11-Feb-2019 07:30:23 AM : Selecting English from Language dropdown<br/>
+11-Feb-2019 07:30:23 AM : Clicking on Search icon<br/>
+11-Feb-2019 07:30:39 AM : Reading header text from the content page - Automation<br/>
+11-Feb-2019 07:30:41 AM : Closing the browser<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.careerit.selenium.testngpack.Selenium_TestNG_Groups1@68f7aae2</td></tr>
+<tr>
+<td title='com.careerit.selenium.testngpack.Selenium_TestNG_Groups1.wikiPedia_TestCase_05()'><b>wikiPedia_TestCase_05</b><br>Test class: com.careerit.selenium.testngpack.Selenium_TestNG_Groups1<br/>
+<a href="#Output-20184223" onClick='toggleBox("Output-20184223", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20184223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20184223">
+11-Feb-2019 07:30:12 AM : Launching Chrome browser with - https://www.wikipedia.org/<br/>
+11-Feb-2019 07:30:22 AM : Enter Selenium WebDriver into Search Text Box<br/>
+11-Feb-2019 07:30:25 AM : Selecting English from Language dropdown<br/>
+11-Feb-2019 07:30:25 AM : Clicking on Search icon<br/>
+11-Feb-2019 07:30:38 AM : Reading header text from the content page - Search results<br/>
+11-Feb-2019 07:30:40 AM : Closing the browser<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.careerit.selenium.testngpack.Selenium_TestNG_Groups1@68f7aae2</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CareerIT Automation Test]" parallel="methods">
+  <test name="CareerIT Regression Test(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.careerit.selenium.testngpack.Selenium_TestNG_Groups1">
+        <methods>
+          <include name="wikiPedia_TestCase_03"/>
+        </methods>
+      </class> <!-- com.careerit.selenium.testngpack.Selenium_TestNG_Groups1 -->
+    </classes>
+  </test> <!-- CareerIT Regression Test(failed) -->
+</suite> <!-- Failed suite [CareerIT Automation Test] -->
